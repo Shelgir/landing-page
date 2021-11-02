@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Dunbar;
+  src: url(./DunbarLow-Light.otf);
+}
+
+* {
+  font-family: Dunbar;
+}
+button {
+  font-family: Dunbar;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Dunbar;
+}
+.line {
+  width: 112px;
+  height: 10px;
+  border-top: 3px solid #f14668;
+  position: absolute;
+}
+
+.title.is-1 {
+  font-size: 8rem;
+}
+
+.chil {
+  position: absolute;
+  background-color: #f14668;
+  bottom: -50%;
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.par {
+  position: relative;
+}
+
+.rad {
+  border-radius: 0;
+}
+
+.card {
+  transition: transform 0.3s ease-in;
+}
+
+.card:hover {
+  background-color: #313131;
+  color: white;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.card > .card-content > .title {
+  transition: transform 0.4s !important;
+}
+
+.card:hover > .card-content > .title {
+  color: #f14668 !important;
+}
+
+.is-child {
+  padding-left: 1em;
+  border-left: 2px solid #f14668;
+}
+
+.social {
+  transition: ease 0.5s !important;
+}
+
+.social:hover {
+  color: #f14668 !important;
+}
+
+.works {
+  transition: ease 0.5s !important;
+}
+
+.works:hover {
+  color: #313131 !important;
+  background-color: white !important;
+}
+
+footer {
+  border-top: #f14668 solid 1px;
+}
+
+.greyscale {
+  filter: grayscale(100%);
+  transition: ease-in-out 0.5s;
+}
+
+.greyscale:hover {
+  filter: grayscale(0%);
+}
+
+.tile {
+  flex-grow: unset !important;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbtn {
+  background-color: transparent;
+  border-color: #f14668;
+  color: #f14668;
+  transition: 0.4s ease-in !important;
+}
+
+.navbtn:hover {
+  background-color: #f14668 !important;
+  color: white !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .skills {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .tag {
+    white-space: unset !important;
+    height: auto !important;
+    padding: 0.5em 0.75em;
+  }
+}
